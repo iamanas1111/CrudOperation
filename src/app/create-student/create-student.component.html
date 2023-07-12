@@ -1,0 +1,107 @@
+<div class="col-md-6 offset-md-3">
+    <h2 style="text-align: center;" >Add Student Details</h2>
+    <br>
+
+    <div style="text-align: center;">
+    <form [formGroup]="myform">
+        <div class="form-group">
+            <label><b>Student Name</b></label>
+            <input [(ngModel)]="user.studentName" formControlName="studentName"  type="text" name="studentName">
+        </div>
+
+        <div class="form-group">
+            <label><b>Email</b></label>
+            <input [(ngModel)]="user.email" formControlName="email" type="text" name="email">
+        </div>
+
+        <div class="form-group">
+            <label><b>Address</b></label>
+            <input [(ngModel)]="user.address" formControlName="address"  type="text" name="address">
+        </div>
+
+        <div class="form-group">
+            <label><b>Course</b></label>
+            <input [(ngModel)]="course1.course" formControlName="course" [value]="course"  type="text" name="course">
+        </div>
+
+        <div class="form-group">
+            <label><b>College</b></label>
+            <input [(ngModel)]="course1.college" [value]="college"  formControlName="college"  type="text" name="college">
+        </div>
+
+        <button type="submit" class="btn bg-primary" (click)="Onsave()">Save</button>
+        <button type="submit" class="btn bg-primary" (click)="Onsubmit()">Submit</button>
+    </form>
+</div> 
+</div>
+
+
+<!-- <div class="col-md-6 offset-md-3">
+    <h2 style="text-align: center;" >Add Student</h2>
+    <br>
+
+    <div style="text-align: center;">
+
+<form [formGroup]="myform">
+    <div class="row contact-wrap">
+        <div class="col-sm-6 col-lg-6">
+            <div class="form-group">
+                <input type="text" name="studentName" id="studentName" formControlName="studentName" class="form-control"
+                    required placeholder="Your Name">
+            </div>
+
+            <div class="form-group">
+                <input type="address" name="email" id="email" formControlName="email" class="form-control"
+                    required placeholder="Email">
+            </div>
+
+            <div class="form-group">
+                <input type="tel" name="address" id="address" formControlName="address" class="form-control"
+                    required placeholder="address">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="course" id="course" formControlName="course" class="form-control"
+                    required placeholder="Course">
+            </div>
+
+            
+
+        </div>
+    
+        <div class="col-sm-6 col-lg-6">
+
+            <div class="form-group">
+                <input type="text" name="studentId" id="studentId" formControlName="studentId" class="form-control"
+                    required placeholder="Student ID">
+            </div>
+            
+            <div class="form-group">
+                <input type="text" name="college" id="college" formControlName="college" class="form-control"
+                    required placeholder="College">
+            </div>
+
+            
+
+            
+
+            
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+            <div class="text-center">
+                <button type="submit" class="btn bg-primary" routerLink="/checkout" (click)="Onsave($event)">Save</button>
+            </div>
+
+        </div>
+        <div class="col-md-6 col-lg-6">
+            
+            <div class="text-center">
+                <button type="submit" class="btn bg-primary" routerLink="/checkout" (click)="Onsubmit()">Submit</button>
+            </div>
+
+        </div>
+    </div>
+</form>
+</div>
+</div> -->

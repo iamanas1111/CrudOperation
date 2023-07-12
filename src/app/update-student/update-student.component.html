@@ -1,0 +1,37 @@
+<div class="col-md-6 offset-md-3">
+    <h2 style="text-align: center;">Update Student Details</h2>
+    <br>
+
+    <div style="text-align: center;">
+        <form>
+            <div class="form-group">
+                <label><b>Student Name</b></label>
+                <input [(ngModel)]="user.studentName" type="text" name="studentName">
+            </div>
+
+            <div class="form-group">
+                <label><b>Email</b></label>
+                <input [(ngModel)]="user.email" type="text" name="email">
+            </div>
+
+            <div class="form-group">
+                <label><b>Address</b></label>
+                <input [(ngModel)]="user.address" type="text" name="address">
+            </div>
+
+            <div class="form-group">
+                <label><b>Course</b></label>
+                <input [(ngModel)]="course1.course" [(ngModel)]="user.course1.course" type="text" name="course">
+            </div>
+
+
+
+            <div class="form-group">
+                <label><b>College</b></label>
+                <input [(ngModel)]="course1.college" [(ngModel)]="user.course1.college" type="text" name="college">
+            </div>
+
+            <button type="submit" class="btn bg-primary" (click)="OnUpdate()">Submit</button>
+        </form>
+    </div>
+</div>
